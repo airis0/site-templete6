@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Sample-Site6</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="common/css/normalize.css">
+<link rel="stylesheet" href="common/css/style.css">
+
+<script src="common/js/jquery-1.10.1.min.js"></script>
+<script src="common/js/jquery.bxslider/jquery.bxslider.js"></script>
+<link rel="stylesheet" href="common/js/jquery.bxslider/jquery.bxslider.css">
+<script>
+$(document).ready(function() {
+  $('.bxslider').bxSlider({
+    auto: true,
+    speed: 1000,
+    pause: 4000
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="page">
+
+<header id="pageHead">
+	<h1 id="siteTitle">Sample-Site</h1>
+	<p id="catchcopy">Catch-Copy</p>
+	<nav class="globalNavi">
+		<ul>
+			<li class="current"><a href="index.html">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#service">Service</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div id="pageBody">
+
+	<!-- スライドショー -->
+	<section class="mainVisual">
+		<ul class="bxslider">
+			<li>
+				<div class="mainVisualText">
+					<h1>Webサイト制作</h1>
+					<p>Webサイト・ホームページ制作<br>HTML・CSSコーティング<br>ECサイト作成</p>
+				</div>
+				<img src="images/slide_img1.jpg" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>SEO対策</h1>
+					<p>SEO内部対策<br>外部SEO被リンク対策<br>SEOコンサルティング</p>
+				</div>
+				<img src="images/slide_img2.jpg" alt="">
+			</li>
+			<li>
+				<div class="mainVisualText">
+					<h1>アプリケーション開発</h1>
+					<p>スマートフォンアプリ開発<br>デスクトップアプリ開発<br>ゲーム開発</p>
+				</div>
+				<img src="images/slide_img3.jpg" alt="">
+			</li>
+		</ul>
+	</section>
+
+	<!-- メインコンテンツ -->
+	<div id="pageBodyMain">
+		<!-- About -->
+		<div id="about">
+			<article class="articleDetail">
+				<h1 class="pageTitle">About</h1>
+				このサイトはaiが作成したHTMLのテンプレートです。<br>
+				使用する場合、文面・画像を差し替えて、お使いください。<br>
+				ダウンロードは<a href="https://github.com/airis0/site-templete6">こちら</a>です。
+			</article>
+		</div>
+
+		<br><hr><br>
+
+		<!-- Service -->
+		<div id="service">
+			<h1 class="pageTitle">Service</h1>
+			<section class="portfolioIndex">
+				
+				<!-- service1 -->
+				<article>
+					<img src="images/site-img.jpg" alt="">
+					<h2>Webサイト制作</h2>
+					<p>Webサイト・ホームページ制作<br>HTML・CSSコーティング<br>ECサイト作成</p>
+					<section class="articleDetailBody">
+						<h2 class="heading-typeA">Webサイト制作なら、お任せください</h2>
+						<section>
+							<h3 class="heading-typeB">HTML・CSSコーティング</h3>
+							<p>Webサイト・ホームページ制作、HTML・CSSコーティングはお任せください。</p>
+						</section>
+						<section>
+							<h3 class="heading-typeB">勿論、レスポンシブデザインに対応</h3>
+							<p>PC・スマートフォンの両方の表示に対応したレスポンシブデザインには、勿論対応しています。ご安心ください。</p>
+						</section>	
+						<section>
+							<h3 class="heading-typeB">WordPress、EC-CUBE等も可能です</h3>
+							<p>WordPress、EC-CUBE等CMSの構築も可能です。</p>
+						</section>
+					</section>
+				</article>
+
+				<!-- service2 -->
+				<article>
+					<img src="images/seo-img.jpg" alt="">
+					<h2>SEO対策</h2>
+					<p>SEO内部対策<br>外部SEO被リンク対策<br>SEOコンサルティング</p>
+					<section class="articleDetailBody">
+						<h2 class="heading-typeA">SEO対策も可能です。</h2>
+						<p>SEO内部対策、外部SEO被リンク対策、SEOコンサルティング等、承ります。お問い合わせください。</p>
+					</section>
+				</article>
+				
+				<!-- service3 -->				
+				<article>
+					<img src="images/app-img.jpg" alt="">
+					<h2>アプリケーション開発</h2>
+					<p>スマートフォンアプリ開発<br>デスクトップアプリ開発<br>ゲーム開発</p>
+					<section class="articleDetailBody">
+						<h2 class="heading-typeA">アプリケーション開発も承っております。</h2>
+						<p>スマートフォンアプリ開発、デスクトップアプリ開発、ゲーム開発も承っております。</p>
+						<section>
+							<h3 class="heading-typeB">スマートフォンアプリ開発</h3>
+							<p>Android Studio、kotlinやApache Cordova、Unityでの開発が可能です。</p>
+						</section>
+						<section>
+							<h3 class="heading-typeB">デスクトップアプリ開発</h3>
+							<p>Microsoft Visual Studio、C#、VBやElectronで制作可能です。</p>
+						</section>
+						<section>
+							<h3 class="heading-typeB">ゲーム開発</h3>
+							<p>JavaScript（enchant.js、phina.js等）やUnityでの開発に対応しています。お問い合わせ下さい。</p>
+						</section>
+					</section>
+				</article>
+				
+			</section>
+		</div>
+		
+		<!-- Contact -->		
+		<div id="contact">
+			<h1 class="pageTitle">Contact</h1>
+			<section>
+				<form method="post" action="/">
+					<label>お名前<br>
+						<input type="text" name="name" required>
+					</label>
+					<br><br>
+					<label>電話番号<br>
+						<input type="tel" name="phone-number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="090-1234-5678" required>
+					</label>
+					<br><br>
+					<label>メールアドレス<br>
+						<input type="email" name="mail" placeholder="mail123address@example.com" maxlength="50" required>
+					</label>
+					<br><br>
+					<label>件名<br>
+						<input type="text" name="subject" maxlength="200" required>
+					</label>
+					<br><br>
+					<label>内容<br>
+						<textarea name="Content" id="Content" cols="30" rows="10" required></textarea>
+					</label>        
+					<br><br>
+					<button type="submit">送信する</button>
+				</form>
+			</section>
+		</div>
+
+
+</div>
+
+	<!-- News -->
+	<section class="news">
+		<h1>News</h1>
+		<table>
+			<tr>
+				<th><time datetime="2020-04-22">2020年04月22日</time></th>
+				<td>HTMLテンプレート（当サイト）完成。</td>
+			</tr>
+			<tr>
+				<th><time datetime="2020-04-18">2020年04月18日</time></th>
+				<td>HTMLテンプレート（当サイト）作成開始。</td>
+			</tr>
+		</table>
+	</section>
+
+</div>
+
+<p class="pagetop"><a href="#page">ページの先頭へ戻る</a></p>
+
+<footer id="pageFoot">
+	<p id="copyright"><small>Copyright&copy; 2020 ai All Rights Reserved.</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>
